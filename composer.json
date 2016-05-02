@@ -1,0 +1,19 @@
+{
+    "name": "amitkhare/slim-hmvc",
+    "description": "A HMVC modular application for Slim Framework",
+    "keywords": ["microframework","hmvc","rest","router", "psr7","modular"],
+    "homepage": "http://github.com/amitkhare/slim-hmvc",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amit Kumar Khare",
+            "email": "amit@khare.co.in",
+            "homepage": "http://www.khare.co/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "monolog/monolog": "^1.17"
+    }
+}
