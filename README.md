@@ -12,6 +12,7 @@ Via Composer:
 Via Git:
 
     git clone https://github.com/amitkhare/slim-hmvc.git [my-app-name]
+
     composer update
 
 Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
