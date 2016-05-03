@@ -1,3 +1,4 @@
 *.log
-.phpintel\
+vendor/
+.phpintel/
 .DS_Store
