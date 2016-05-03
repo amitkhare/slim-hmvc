@@ -5,7 +5,13 @@ A HMVC modular application for Slim Framework. Use this application to quickly s
 
 Run this command from the directory in which you want to install your new Slim 3 Framework with modular HMVC.
 
+Via Composer:
+
     php composer.phar create-project amitkhare/slim-hmvc [my-app-name]
+
+Via Git:
+
+    git clone https://github.com/amitkhare/slim-hmvc.git [my-app-name]
 
 Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
 
