@@ -2,7 +2,6 @@
     "name": "amitkhare/slim-hmvc",
     "description": "A HMVC modular application for Slim Framework",
     "keywords": ["microframework","hmvc","rest","router", "psr7","modular"],
-    "type": "project",
     "homepage": "http://github.com/amitkhare/slim-hmvc",
     "license": "MIT",
     "authors": [
