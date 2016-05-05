@@ -22,7 +22,7 @@ class ValidateIt {
 		return $str;
 	}
 
-	private function setStatus($code,$msg){
+	public function setStatus($code,$msg){
 			$this->code=$code;
 			$this->msgs[]=$msg;
 	}
