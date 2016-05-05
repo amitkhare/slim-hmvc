@@ -1,5 +1,5 @@
 <?php
-namespace AmitKhareSlimHMVC;
+namespace AmitKhare\SlimHMVC;
 
 class ValidateIt {
 

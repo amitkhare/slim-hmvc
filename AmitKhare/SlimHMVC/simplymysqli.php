@@ -1,4 +1,6 @@
 <?php
+//namespace AmitKhare\SlimHMVC;
+
 /*------------------------------------------------------------------------------
 ** File:        class.db.php
 ** Class:       Simply MySQLi
@@ -95,7 +97,7 @@ class DB
             $this->link = new mysqli( DB_HOST, DB_USER, DB_PASS, DB_NAME );
             $this->link->set_charset( "utf8" );
         } catch ( Exception $e ) {
-            die( 'Unable to connect to database' );
+            die( 'Unable to connect to database, goto http://github.com/amitkhare/slim-hmvc and read the docs about setting up database.' );
         }
     }
 
