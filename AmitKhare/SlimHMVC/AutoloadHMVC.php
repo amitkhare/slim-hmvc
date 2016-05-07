@@ -6,7 +6,6 @@ if (!defined('DS')) {
 }
 
 require_once (__DIR__."/modules.php");
-require_once (__DIR__."/validation.php");
 require_once (__DIR__."/baseModel.php");
 require_once (__DIR__."/baseController.php");
 require_once (__DIR__."/simplymysqli.php");

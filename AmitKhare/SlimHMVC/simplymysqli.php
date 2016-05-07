@@ -1,6 +1,4 @@
 <?php
-//namespace AmitKhare\SlimHMVC;
-
 /*------------------------------------------------------------------------------
 ** File:        class.db.php
 ** Class:       Simply MySQLi

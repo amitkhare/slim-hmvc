@@ -1,7 +1,6 @@
 {
     "name": "amitkhare/slim-hmvc",
-    "description": "A HMVC modular library for Slim Framework.
-    Use this library to start working on a new Slim Framework 3 with HMVC capebilities.",
+    "description": "A HMVC modular library for Slim Framework. Use this library to start working on a new Slim Framework 3 with HMVC capebilities.",
     "homepage": "http://github.com/amitkhare/slim-hmvc",
     "license": "MIT",
     "autoload":{
@@ -17,5 +16,7 @@
     ],
 
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "amitkhare/validbit": "^0.1.0"
+    }
 }
