@@ -5,19 +5,19 @@ class baseModel {
 
     protected $c;
     protected $db;
+    protected $dbSettings;
     protected $tableName = "UPDATE_IN_CHILD_MODELS";
-   
+
     public function __construct($c)  {
         $this->c = $c;
         if(isset($c->db)){
             $this->db = $c->db;
         } else {
-            $settings = ($c->get('settings')['db']) ? $c->get('settings')['db'] : false;
-            $this->db = $this->_getDB($settings); 
+            $this->dbSettings  = ($c->get('settings')['db']) ? $c->get('settings')['db'] : false;
+            $this->db = $this->_getDB($this->dbSettings);
         }
     }
-    
-    
+
      private function _getDB($settings) {
         if(!defined('DB_HOST')){
             define( 'DB_HOST', $settings['hostname'] ); // set database host
@@ -54,7 +54,7 @@ class baseModel {
         $query = "SELECT * FROM $this->tableName WHERE  $key $id LIMIT 1;";
         $result = $this->db->get_results( $query ,true);
         if($result){
-            return $result;
+            return $result[0];
         }
     }
 
