@@ -31,14 +31,13 @@ class AutoloadHMVC {
         if(!isset($this->c->get('settings')['db'])){
             die("Please set database perameters ['db'] at app container settings");
         }
-        
     }
 
     public function init($app){
         $mdl = new Modules($this->c);
         $this->modules = $mdl->getModules();
         $this->modulesLocations = $mdl->getLocations();
-       
+
         $app->getContainer()['Modules'] = function () {
             return $this->modules;
         };

@@ -35,7 +35,7 @@ class Modules {
 
 
     public function loadView($module,$view,$data=array("success"=>false)) {
-        $path = $this->modulePath.$module.DS.'Views'.DS.$view.'.php';
+        $path = $this->modulePath.$module.DS.'views'.DS.$view.'.php';
         $data = (is_array($data) && !empty($data)) ? $data : array('success'=>true);
         foreach ($data as $key => $value) {
             $$key=$value;

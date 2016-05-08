@@ -17,6 +17,6 @@
 
     "minimum-stability": "dev",
     "require": {
-        "amitkhare/validbit": "^0.1.0"
+        "amitkhare/validbit": "^0.2.0"
     }
 }
