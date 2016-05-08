@@ -47,14 +47,9 @@ class Modules {
 
     function getModules() {
         $modulesObj = (object)array("success"=>false);
-
         foreach ($this->getLocations() as $module) {
             require $module->Path.$module->Controller;
-            $n = $module->Name;
-            $modulesObj->$n = new $n($this->c);
         }
-        $this->modules = $modulesObj;
-        return $this->modules;
     }
 
     private function dirToArray($dir) {

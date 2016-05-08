@@ -35,13 +35,12 @@ class AutoloadHMVC {
 
     public function init($app){
         $mdl = new Modules($this->c);
-        $this->modules = $mdl->getModules();
         $this->modulesLocations = $mdl->getLocations();
 
-        $app->getContainer()['Modules'] = function () {
-            return $this->modules;
-        };
         ob_start();
+        foreach ($this->modulesLocations as $module) {
+            require $module->Path.$module->Controller;
+        }
         foreach ($this->modulesLocations as $module) {
            include_once $module->Path.$module->Routes;
         }
