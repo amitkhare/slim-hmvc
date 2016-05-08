@@ -5,9 +5,11 @@ class baseController {
     protected $c;
     protected $moduleName="EMPTY-MODULE";
     protected $model;
+    protected $modules;
     public function __construct($c) {
         $this->c = $c;
         $this->_loadModule($c);
+        $this->modules = new Modules($c);
     }
 
     private function _loadModule($c){
