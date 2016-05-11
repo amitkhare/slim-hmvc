@@ -1,5 +1,5 @@
 # amitkhare/slim-hmvc
-A HMVC modular application for Slim Framework. Use this application to quickly setup and start working on a new Slim Framework 3 with HMVC capebilities.
+A HMVC modular application for Slim Framework. Use this application to quickly setup and start working on a new Slim Framework 3 with HMVC capabilities.
 
 ## Install -skeleton
 
