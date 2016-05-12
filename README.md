@@ -1,6 +1,8 @@
 # amitkhare/slim-hmvc
 A HMVC modular application for Slim Framework. Use this application to quickly setup and start working on a new Slim Framework 3 with HMVC capabilities.
 
+[![PHPPackages Rank](http://phppackages.org/p/amitkhare/slim-hmvc/badge/rank.svg)](http://phppackages.org/p/amitkhare/slim-hmvc)
+
 ## Install -skeleton
 
 Run this command from the directory in which you want to install your new Slim 3 Framework with modular HMVC.
